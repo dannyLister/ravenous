@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Business.css';
 
 const business = {
@@ -13,7 +13,7 @@ const business = {
   reviewCount: 90
 };
 
-class Business extends Component {
+class Business extends React.Component {
   render() {
     return (
       <div className="Business">
