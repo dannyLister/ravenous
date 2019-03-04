@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './SearchBar.css';
 
 const sortByOptions = {
@@ -7,7 +7,7 @@ const sortByOptions = {
   'Most Reviewed': 'review_count'
 };
 
-class SearchBar extends React.Component {
+class SearchBar extends Component {
   renderSortByOptions() {
     return Object.keys(sortByOptions).map(sortByOption => {
       let sortByOptionValue = sortByOptions[sortByOption]; //store the object values in a variable. inside of the callback function, access the  sortyByOptions values using the sortByOption parameter fo the callback function.
@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
           <ul>
-            {/* {renderSortByOptions}  */} --- replace the comment with a call to .renderSortByOptions
+            {this.renderSortByOptions()}
           </ul>
         </div>
         <div className="SearchBar-fields">
