@@ -11,8 +11,8 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      term: "", //state not updating somewhere
-      location: "", //state not updating somewhere
+      term: "",
+      location: "",
       sortBy: "best_match"
     };
     this.handleTermChange = this.handleTermChange.bind(this);
